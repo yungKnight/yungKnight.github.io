@@ -11,6 +11,8 @@
     <!-- Tailwind CSS via CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 
+    <link href="style.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="../images/iconSmall.png">
 </head>
@@ -27,8 +29,26 @@
     	
     </div>
 
-    <footer class="text-center mt-5 py-3 bg-gray-100">
-        <p>&copy; 2024 Kennery's Portfolio</p>
+    <footer class="text-center mt-5 py-3 footer">
+    	<div class="footer-social">
+            <a href="#" class="social-icon">
+                <img src="Images/gitSmall.svg" alt="GitHub">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="Images/linkdSmall.png" alt="LinkedIn">
+            </a>
+            <a href="#" class="social-icon">
+                <img src="Images/xSmall.png" alt="Twitter">
+            </a>
+        </div>
+
+        <div class="footer-copyright">
+            <p>&copy;
+                <script>
+                    document.write(new Date().getFullYear());
+                </script> Kennery's Portfolio
+            </p>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -12,25 +12,115 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.35);
-    backdrop-filter: blur(9px) brightness(70%) contrast(150%); 
+    backdrop-filter: blur(6px) brightness(70%) contrast(150%); 
     pointer-events: none; 
     z-index: 5; 
 }
 
-
 .container,
 .tech-stack,
 .experiences {
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     font-family: serif, sans-serif;
     background-color: #FFFDD0; 
     opacity: 0.6;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     padding: 20px 15px 10px 15px;
-    color: purple;
+    color: #1A0033;
+    text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
+.experiences ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* List item animation */
+.custom-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.custom-list li.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.custom-list li:nth-child(odd) {
+    flex-direction: row; 
+}
+
+.custom-list li:nth-child(odd) .text {
+    text-align: right;
+}
+
+.custom-list li:nth-child(even) {
+    flex-direction: row-reverse; 
+}
+
+.custom-list li:nth-child(even) .text {
+    text-align: left;
+}
+
+.custom-list li .icon {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 20px;
+}
+
+.bullet1 .icon {
+    background-image: url('../images/pacifier.png');
+}
+
+.bullet2 .icon {
+    background-image: url('../images/read.png');
+}
+
+.bullet3 .icon {
+    background-image: url('../images/discover.png');
+}
+
+.bullet4 .icon {
+    background-image: url('../images/think.png');
+}
+
+.bullet5 .icon {
+    background-image: url('../images/build.png');
+}
+
+.bullet6 .icon {
+    background-image: url('../images/designer.png');
+}
+
+.bullet7 .icon {
+    background-image: url('../images/learn.png');
+}
+
+.bullet8 .icon {
+    background-image: url('../images/scraper.png');
+}
+
+.bullet9 .icon {
+    background-image: url('../images/build.png');
+}
+
+.bullet10 .icon {
+    background-image: url('../images/contrib.png');
+}
 
 .footer {
     height: 3.8em;
@@ -92,85 +182,4 @@ mark {
     font-size: 18px;
     text-shadow: 2px 3px 4px red, -2px -3px 4px blue;
     text-decoration: underline 2px;
-}
-
-.custom-list {
-    list-style: none;
-    padding-left: 0; 
-    position: relative;
-    margin-left: 20px; 
-}
-
-.custom-list li {
-    position: relative;
-    padding-left: 50px;
-    margin-bottom: 20px;
-}
-
-.custom-list li::before {
-    content: "";
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-size: cover;
-    background-repeat: no-repeat; 
-}
-
-.custom-list li::after {
-    content: "";
-    position: absolute;
-    left: 25px;
-    top: 50%;
-    width: 2px;
-    /* height: calc(100% + 8px); 
-    background-color: black; 
-    transform: translateY(-50%); */
-    z-index: -1;
-}
-
-.bullet::before {
-    border-radius: 25% 30%;
-}
-
-.bullet1::before {
-    background-image: url('../images/pacifier.png');
-}
-
-.bullet2::before {
-    background-image: url('../images/read.png'); 
-}
-
-.bullet3::before {
-    background-image: url('../images/discover.png'); 
-}
-
-.bullet4::before {
-    background-image: url('../images/think.png'); 
-}
-
-.bullet5::before {
-    background-image: url('../images/build.png'); 
-}
-
-.bullet6::before {
-    background-image: url('../images/designer.png'); 
-}
-
-.bullet7::before {
-    background-image: url('../images/learn.png'); 
-}
-
-.bullet8::before {
-    background-image: url('../images/scraper.png');
-}
-
-.bullet9::before {
-    background-image: url('../images/build.png');
-}
-
-.bullet10::before {
-    background-image: url('../images/contrib.png');
 }

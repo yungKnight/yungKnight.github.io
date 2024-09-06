@@ -16,7 +16,7 @@
 
     <div class="overlay"></div>
 
-    <div class="container my-4 introduction relative z-20" style="background-color: #FFFDD0;">
+    <div class="container my-2 introduction relative z-20" style="background-color: #FFFDD0;">
         <h1 class="text-center text-4xl font-bold mb-3">Welcome to Kennery's Portfolio</h1>
         <p>I am a <strong>Web ....</strong></p>
         <p class="picRep">HTML5, CSS, JS, PYTHON, DJANGO</p>
@@ -24,29 +24,52 @@
 
     <div class="tech-stack relative z-20" style="background-color: #FFFDD0;">
         <h2 class="text-2xl font-bold mb-4">Tech Stack</h2>
-        <ul class="custom-list">
-            <li class="bullet1"><a href="#html">HTML</a></li>
-            <li><a href="#css">CSS</a></li>
-            <li><a href="#javascript">JavaScript</a></li>
-            <li><a href="#bootstrap">Bootstrap</a></li>
-            <li><a href="#tailwind">Tailwind CSS</a></li>
-        </ul>
     </div>
 
     <div class="experiences relative z-20" style="background-color: #FFFDD0;">
         <h2 class="text-2xl font-bold mb-4">My Journey Yet</h2>
-        <ul class="custom-list">
-            <li class="bullet bullet1">Total noob</li>
-            <li class="bullet bullet2">Varsity student</li>
-            <li class="bullet bullet3">Discovered Web development</li>
-            <li class="bullet bullet4">This thing might actually make sense</li>
-            <li class="bullet bullet5">Built my first static web app</li>
-            <li class="bullet bullet6">Decided to dive deeper into web development</li>
-            <li class="bullet bullet7">Started learning a new programming language- Python</li>
-            <li class="bullet bullet8">Specialized the use of Python in scraping websites for structured data collection</li>
-            <li class="bullet bullet9">Built a couple projects for scraping purposes</li>
-            <li class="bullet bullet10">Ventured into the world of Git and Github open-source contributions</li>
-        </ul>
+        <ol class="custom-list">
+            <li class="bullet bullet1">
+                <span class="text left">Total noob</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet2">
+                <span class="text right">Varsity student</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet3">
+                <span class="text left">Discovered Web development</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet4">
+                <span class="text right">This thing might actually make sense</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet5">
+                <span class="text left">Built my first static web app</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet6">
+                <span class="text right">Decided to dive deeper into web development</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet7">
+                <span class="text left">Started learning a new programming language - Python</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet8">
+                <span class="text right">Specialized the use of Python in scraping websites for structured data collection</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet9">
+                <span class="text left">Built a couple projects for scraping purposes</span>
+                <span class="icon"></span>
+            </li>
+            <li class="bullet bullet10">
+                <span class="text right">Ventured into the world of Git and Github open-source contributions</span>
+                <span class="icon"></span>
+            </li>
+        </ol>
     </div>
 
     <footer class="text-center mt-5 py-3 footer relative z-20">
@@ -76,6 +99,28 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const listItems = document.querySelectorAll('.custom-list li');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('in-view');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            listItems.forEach((item) => {
+                observer.observe(item);
+            });
+        });
+
+    </script>
+
 </body>
 
 </html>

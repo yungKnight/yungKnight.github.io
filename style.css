@@ -43,12 +43,16 @@ body {
 }
 
 .text .card-footer {
-    padding: 1rem 1rem;
+    padding: 0.2rem 0.2rem;
     border-top: 1px solid #ddd;
-    background-color: #f9f9f9;
+    background-color: rgba(255, 255, 255, 0.3);
     text-align: right;
     font-size: 0.9rem;
     color: #555;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .text .card-footer:empty {
@@ -83,7 +87,7 @@ body {
     z-index: 5;
 }
 
-.container,
+.introduction,
 .tech-stack,
 .experiences {
     width: 100%;
@@ -97,8 +101,17 @@ body {
     text-align: center;
 }
 
+h1, h2 {
+    color: #673267;
+}
+
 h2 {
     text-align: center;
+}
+
+.tech-stack ol {
+    justify-content: center;
+    align-items: center;
 }
 
 .experiences ol {
@@ -124,7 +137,7 @@ h2 {
 }
 
 .custom-list li.build.in-view {
-    animation: bounce 5s linear;
+    animation: bounce 4s linear;
 }
 
 .custom-list li:nth-child(odd) .text {
@@ -140,14 +153,35 @@ h2 {
 }
 
 .custom-list li .icon {
-    width: 5vw;
-    height: 5vw;
+    background-color: white;
+    border-radius: 50%;
     min-width: 40px;
     min-height: 40px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.custom-list li .icon::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(128, 0, 128, 0.5);
+    z-index: -1; 
+}
+
+.custom-list li:first-child .icon::before {
+    top: 98%; 
+}
+
+.custom-list li:last-child .icon::before {
+    height: 90%;
 }
 
 .bullet1 .icon {
@@ -188,6 +222,14 @@ h2 {
 
 .bullet10 .icon {
     background-image: url('../images/contrib.png');
+}
+
+.bullet11 .icon {
+    background-image: url('../images/web.png');
+}
+
+.bullet12 .icon {
+    background-image: url('../images/build.png');
 }
 
 .footer {
@@ -233,9 +275,8 @@ h2 {
 
 .social-icon:hover {
     background-color: #555;
-    width: 1.6rem;
-    height: 1.4rem;
     border-radius: 30%;
+    transform: scale(1.4);
 }
 
 mark {

@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kennery's Portfolio</title>
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="../images/iconSmall.png">
@@ -16,14 +15,50 @@
 
     <div class="overlay"></div>
 
-    <div class="container mb-2 introduction relative z-20" style="background-color: #FFFDD0;">
+    <div class="mb-1 introduction relative z-20" style="background-color: #FFFDD0;">
         <h1 class="text-center text-4xl font-bold mb-3">Welcome to Kennery's Portfolio</h1>
         <p>I am a <strong>Web ....</strong></p>
-        <p class="picRep">HTML5, CSS, JS, PYTHON, DJANGO</p>
+        <ol style="display: flex; gap: 0.2rem;" class="my-3">
+            <li><img src="../images/html.png"></li>
+            <li><img src="../images/css.png"> </li>
+            <li><img src="../images/js.png"> </li>
+            <li><img src="../images/python.png"> </li>
+            <li><img src="../images/django.png"> </li>
+            <li><img src="../images/git.png"> </li>
+            <li><img src="../images/github.png"> </li>
+            <li><img src="../images/bootstrap.png"> </li>
+            <li><img src="../images/tail.png"> </li>
+        </ol>
     </div>
 
-    <div class="tech-stack relative z-20" style="background-color: #FFFDD0;">
-        <h2 class="text-2xl font-bold mb-4">Tech Stack</h2>
+    <div class="tech-stack relative z-20 services-card">
+        <h2 class="services-title text-2xl font-bold mb-4">My Services</h2>
+        <ol class="services-list" style="display: flex; gap: 1rem;">
+            <li>
+                <div class="text card">
+                    <div class="card-header text-center font-bold text-2xl" style="color: rgba(0, 0, 0, 0.8);"><h3>Front-End Development</h3></div>
+                    <div class="card-body">
+                        Wrote several website specific scripts aimed at extracting data from said pages. 
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="text card">
+                    <div class="card-header text-center font-bold text-2xl" style="color: rgba(0, 0, 0, 0.8);"><h3>Back-End Development</h3></div>
+                    <div class="card-body">
+                        Wrote several website specific scripts aimed at extracting data from said pages. 
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="text card">
+                    <div class="card-header text-center font-bold text-2xl" style="color: rgba(0, 0, 0, 0.8);"><h3>Web Scraping</h3></div>
+                    <div class="card-body">
+                        Wrote several website specific scripts aimed at extracting data from said pages. 
+                    </div>
+                </div>
+            </li>
+        </ol>
     </div>
 
     <div class="experiences relative z-20" style="background-color: #FFFDD0;">
@@ -37,6 +72,9 @@
                     <div class="card-body">
                     Total noob- knows about just web browsing with no dev knowledge
                     </div>
+                    <div class="card-footer">
+                        <h2 class="py-1"> MM/YYYY</h2>
+                    </div>
                 </div>
 
                 <span class="icon"></span>
@@ -49,7 +87,7 @@
                         Varsity student admission- A new beginning
                     </div>
                     <div class="card-footer">
-                        <span>View Project</span>
+                        <h2 class="py-1"> MM/YYYY</h2>
                     </div>
                 </div>
 
@@ -62,6 +100,9 @@
                     <div class="card-body">
                         Discovered Web development- the basics, and applications of it
                     </div>
+                    <div class="card-footer">
+                        <h2 class="py-1"> MM/YYYY</h2>
+                    </div>
                 </div>
 
                 <span class="icon"></span>
@@ -72,6 +113,9 @@
                     <div class="card-header text-center font-bold" style="color: rgba(0, 0, 0, 0.6);"><h3>Eureka Moment</h3></div>
                     <div class="card-body">
                         This thing might actually make sense
+                    </div>
+                    <div class="card-footer">
+                        <h2 class="py-1"> MM/YYYY</h2>
                     </div>
                 </div>
 
@@ -85,7 +129,10 @@
                         Built my first static web app- GuessMaster, a multi-level numbers guessing game
                     </div>
                     <div class="card-footer">
-                        <span>View Project</span>
+                        <h2 class="py-1"> MM/YYYY</h2>
+                        <button class="bg-blue-700 hover:bg-purple-700 text-white font-bold py-1 px-1 rounded">
+                            <h2 class="text-white">View Project</h2>
+                        </button>
                     </div>
                 </div>
 
@@ -98,6 +145,9 @@
                     <div class="card-body">
                         Decided to dive deeper into the world of web development
                     </div>
+                    <div class="card-footer">
+                        <h2 class="py-1"> MM/YYYY</h2>
+                    </div>
                 </div>
 
                 <span class="icon"></span>
@@ -107,7 +157,10 @@
                 <div class="text card">
                     <div class="card-header text-center font-bold" style="color: rgba(0, 0, 0, 0.6);"><h3>...And Development</h3></div>
                     <div class="card-body">
-                        Started learning of a new language- Python
+                        Started learning a new language- Python
+                    </div>
+                    <div class="card-footer">
+                        <h2 class="py-1"> MM/YYYY</h2>
                     </div>
                 </div>
 
@@ -121,6 +174,9 @@
                         Specialized the use of Python for the structured collection of data from 
                         websites
                     </div>
+                    <div class="card-footer">
+                        <h2 class="py-1"> MM/YYYY</h2>
+                    </div>
                 </div>
 
                 <span class="icon"></span>
@@ -133,7 +189,10 @@
                         Wrote several website specific scripts aimed at extracting data from said pages. 
                     </div>
                     <div class="card-footer">
-                        <span>View Project</span>
+                        <h2 class="py-1"> MM/YYYY</h2>
+                        <button class="bg-blue-700 hover:bg-purple-700 text-white font-bold py-1 px-1 rounded">
+                            <h2 class="text-white">View Project</h2>
+                        </button>
                     </div>
                 </div>
 
@@ -147,7 +206,38 @@
                         Ventured into the world of Git and Github for open-source contributions
                     </div>
                     <div class="card-footer">
-                        <span>View Project</span>
+                        <h2 class="py-1"> MM/YYYY</h2>
+                    </div>
+                </div>
+
+                <span class="icon"></span>
+            </li>
+
+            <li class="bullet bullet11">
+                <div class="text card">
+                    <div class="card-header text-center font-bold" style="color: rgba(0, 0, 0, 0.6);"><h3>Fullstack? Yes</h3></div>
+                    <div class="card-body">
+                        Learnt a Python-based web server framework- Django
+                    </div>
+                    <div class="card-footer">
+                        <h2 class="py-1"> MM/YYYY</h2>
+                    </div>
+                </div>
+
+                <span class="icon"></span>
+            </li>
+
+            <li class="bullet bullet12 build">
+                <div class="text card">
+                    <div class="card-header text-center font-bold" style="color: rgba(0, 0, 0, 0.6);"><h3>Fullstack Developer</h3></div>
+                    <div class="card-body">
+                        Built a couple projects, most of which are unhosted with another in the works (to be hosted for public use hopefully)
+                    </div>
+                    <div class="card-footer">
+                        <h2 class="py-1"> MM/YYYY</h2>
+                        <button class="bg-blue-700 hover:bg-purple-700 text-white font-bold py-1 px-1 rounded">
+                            <h2 class="text-white-400">View Project</h2>
+                        </button>
                     </div>
                 </div>
 
@@ -183,7 +273,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {

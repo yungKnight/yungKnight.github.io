@@ -3,6 +3,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.languages {
+    min-width: 1rem;
+    min-height: 1rem;
+}
+
 body {
     padding-bottom: 4rem;
     font-family: serif, sans-serif;
@@ -10,6 +15,41 @@ body {
     background-position: center;
     overflow-x: hidden;
 }
+
+.slanted-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%; 
+  gap: 3rem; 
+  position: relative;
+}
+
+.slanted-grid > :first-child {
+  margin-left: 2rem;
+}
+
+.slanted-grid > :last-child {
+  margin-right: 2rem;
+}
+
+.slanted-grid::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0px 0px 1px 0px solid #000;
+  background-color: #FFFFEB;
+  z-index: -12;
+  padding: 2rem;
+  color: #9B2774;
+}
+
+.grid-item {
+  padding: 20px;
+}
+
 
 .custom-list li {
     display: flex;
@@ -31,21 +71,21 @@ body {
     width: 100%;
     max-width: 90%;
     text-align: left;
-    padding: 1rem;
+    padding: 0.8rem;
     background-color: rgba(255, 255, 255, 0.3);
     color: purple;
 }
 
 .text .card-body {
-    padding: 1rem;
+    padding: 0.8rem;
     font-size: 1.1rem;
     color:  #4d0026;
 }
 
 .text .card-footer {
-    padding: 0.2rem 0.2rem;
+    padding: 0.4rem 0.3rem 0.3rem 0.3rem;
     border-top: 1px solid #ddd;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.6);
     text-align: right;
     font-size: 0.9rem;
     color: #555;
@@ -65,7 +105,19 @@ body {
         max-width: 400px;
         margin-bottom: 1rem;
     }
+
+    .languages {
+        width: 50px;
+        height: 50px;
+      }
 }
+
+@media (min-width: 1440px) { 
+      .languages {
+        width: 80px;
+        height: 80px;
+      }
+    }
 
 .custom-list li:nth-child(even) .text.card {
     text-align: left;
@@ -153,16 +205,17 @@ h2 {
 }
 
 .custom-list li .icon {
+    border: 2px black;
     background-color: white;
     border-radius: 50%;
-    min-width: 40px;
+    min-width: 40px; 
     min-height: 40px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     margin: 0 20px;
     position: relative;
-    z-index: 1;
+    z-index: 1; 
 }
 
 .custom-list li .icon::before {
@@ -170,10 +223,10 @@ h2 {
     position: absolute;
     left: 50%;
     top: 0;
-    width: 2px;
+    width: 2px; 
     height: 100%;
-    background-color: rgba(128, 0, 128, 0.5);
-    z-index: -1; 
+    background-color: rgba(128, 0, 128, 0.5); 
+    z-index: -1;
 }
 
 .custom-list li:first-child .icon::before {
@@ -181,7 +234,7 @@ h2 {
 }
 
 .custom-list li:last-child .icon::before {
-    height: 90%;
+    height: 90%; 
 }
 
 .bullet1 .icon {
@@ -273,6 +326,21 @@ h2 {
     border-radius: 50%;
 }
 
+.vibrate:hover {
+    background-color: purple;
+    transform: scale(1.05);
+    opacity: 0.75;
+    animation: vibrate 0.3s ease-in-out;
+}
+
+@keyframes vibrate {
+    0% { transform: translateX(0) scale(1.1); } 
+    25% { transform: translateX(-2px) scale(1.1); }
+    50% { transform: translateX(2px) scale(1.1); }
+    75% { transform: translateX(-2px) scale(1.1); }
+    100% { transform: translateX(0) scale(1.1); }
+}
+
 .social-icon:hover {
     background-color: #555;
     border-radius: 30%;
@@ -314,6 +382,11 @@ mark {
 
     h1, h2 {
         font-size: 1.5rem;
+    }
+
+    .languages {
+      width: 20px;
+      height: 20px;
     }
 
     .footer {

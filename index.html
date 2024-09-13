@@ -26,10 +26,10 @@
                 <h1 class="text-3xl pb-1 ribeye-marrow-regular">Ajayi <mark class="mx-1 alias">'Kennery'</mark> Eniola </h1>
                 <div>
                     <div></div>
-                    <img src="../images/male30.png" class="ml-2 mt-2" style="width: 1.5rem; height: 1.5rem;"> 
+                    <img src="../images/male30.png" class="ml-2 mt-2" style="width: 1.5rem; height: 1.5rem; cursor: pointer;"> 
                 </div>
             </div>
-            <p class="text-xl">Freelance <strong>Web <span class="Specialist">....</span></strong></p>
+            <strong><p class="text-2xl my-2 Specialist">Web Developer</p></strong>
         </div>
 
         <div class="grid grid-item grid-cols-3 mb-1">
@@ -303,6 +303,26 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const specialistElement = document.querySelector(".Specialist");
+        const contents = ["Web Developer", "Web Scraper", "Certified Economist(BSc.)"];
+        let currentIndex = 0;
+
+        setInterval(() => {
+          specialistElement.style.opacity = 0;
+
+          setTimeout(() => {
+            currentIndex = (currentIndex + 1) % contents.length;
+            specialistElement.textContent = contents[currentIndex];
+
+            specialistElement.style.opacity = 1;
+          }, 600); 
+        }, 4000);
+      });
+    </script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {

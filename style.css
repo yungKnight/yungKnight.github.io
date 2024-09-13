@@ -18,14 +18,14 @@ body {
 
 .ribeye-marrow-regular {
   font-family: "Ribeye Marrow", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .slanted-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: 70% 30%; 
+  grid-template-columns: 70% 30%;
   gap: 3rem;
   position: relative;
 }
@@ -55,6 +55,12 @@ body {
 .grid-item {
   padding: 20px;
 }
+
+.Specialist {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; 
+}
+
 
 .custom-list li {
     display: flex;
@@ -227,9 +233,9 @@ h2 {
 .custom-list li .icon::before {
     content: '';
     position: absolute;
-    left: 50%; 
+    left: 50%;
     top: 0;
-    width: 2px; 
+    width: 2px;
     height: 100%;
     background-color: rgba(128, 0, 128, 0.5);
     z-index: -1; 
@@ -344,7 +350,7 @@ h2 {
 }
 
 @keyframes vibrate {
-    0% { transform: translateX(0) scale(1.1); }
+    0% { transform: translateX(0) scale(1.1); }  
     25% { transform: translateX(-2px) scale(1.1); }
     50% { transform: translateX(2px) scale(1.1); }
     75% { transform: translateX(-2px) scale(1.1); }

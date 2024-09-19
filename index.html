@@ -21,15 +21,36 @@
 
     <div class="mb-1 introduction relative z-20 slanted-grid" style="background-color: #FFFDD0;">
         <div class="grid-item flex flex-col justify-center h-full text-left">
-            <h2 style="text-align: inherit;" class="text-2xl">Hi, I am</h2>
+            <h2 style="text-align: inherit;" class="text-2xl english-spanish">Hi, I am</h2>
             <div style="display: flex;">
                 <h1 class="text-4xl pb-1 ribeye-marrow-regular">Ajayi <mark class="mx-1 alias">'Kennery'</mark> Eniola </h1>
                 <div>
-                    <div></div>
-                    <img src="../images/male30.png" class="ml-2 mt-3" style="width: 1.5rem; height: 1.5rem; cursor: pointer;"> 
+
+                    <div class="image-container">
+                        <img src="../images/male30.png" class="animated-border ml-2 mt-3" style="width: 1.5rem; height: 1.5rem; cursor: pointer;">
+                    </div>
+
+                    <div class="popup-container">
+                        <div class="text card more-info">
+                            <div class="card-body more-info-body">
+                                <h2 style="font-size: 0.85rem;">
+                                    I'm the type of person who's always hungry for knowledge, and my curiosity drives me to dig deeper, explore new ideas, and keep asking questions. For me, learning is a lifelong adventure, and I'm always looking forward to my next big discovery.
+                                </h2>
+                            </div>
+                            <div class="card-footer more-info-footer">
+                                <h3 style="font-size: 0.78rem;" class="more-info-footer-content font-bold">
+                                    English(Proficient), Yoruba(Native) & Spanish(Basic)
+                                </h3>
+                                <h3 style="font-size: 0.73rem;" class="more-info-footer-content font-bold">
+                                    Preferred Roles: Contract, Contract-to-Hire, Full-Time
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <strong><p class="text-2xl my-2 Specialist">Web Developer</p></strong>
+            <strong><p class="text-2xl my-2 Specialist">Fullstack Web Developer</p></strong>
         </div>
 
         <div class="grid grid-item grid-cols-3 mb-2">
@@ -313,7 +334,7 @@
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         const specialistElement = document.querySelector(".Specialist");
-        const contents = ["Web Developer", "Web Scraper", "Economist (BSc.)"];
+        const contents = ["Fullstack Web Developer", "Web Scraper", "Economist (BSc.)"];
         let currentIndex = 0;
 
         setInterval(() => {
@@ -326,6 +347,25 @@
             specialistElement.style.opacity = 1;
           }, 1000); 
         }, 3000);
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const specialistElement = document.querySelector(".english-spanish");
+        const contents = ["Hi, I am", "Hola, Soy"];
+        let currentIndex = 0;
+
+        setInterval(() => {
+          specialistElement.style.opacity = 0;
+
+          setTimeout(() => {
+            currentIndex = (currentIndex + 1) % contents.length;
+            specialistElement.textContent = contents[currentIndex];
+
+            specialistElement.style.opacity = 1;
+          }, 1000); 
+        }, 7000);
       });
     </script>
 

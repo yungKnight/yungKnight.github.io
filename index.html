@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="test.css" rel="stylesheet">
     <link rel="shortcut icon" href="../images/iconSmall.png">
 </head>
 
@@ -21,7 +21,7 @@
 
     <div class="mb-1 introduction relative z-20 slanted-grid" style="background-color: #FFFDD0;">
         <div class="grid-item flex flex-col justify-center h-full text-left">
-            <h2 style="text-align: inherit;" class="text-2xl english-spanish">Hi, I am</h2>
+            <h2 style="text-align: inherit;" class="text-2xl">Hi <span class="wave-hand">👋</span>, I am</h2>
             <div style="display: flex;">
                 <h1 class="text-4xl pb-1 ribeye-marrow-regular">Ajayi <mark class="mx-1 alias">'Kennery'</mark> Eniola </h1>
                 <div>
@@ -349,26 +349,6 @@
         }, 3000);
       });
     </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        const specialistElement = document.querySelector(".english-spanish");
-        const contents = ["Hi, I am", "Hola, Soy"];
-        let currentIndex = 0;
-
-        setInterval(() => {
-          specialistElement.style.opacity = 0;
-
-          setTimeout(() => {
-            currentIndex = (currentIndex + 1) % contents.length;
-            specialistElement.textContent = contents[currentIndex];
-
-            specialistElement.style.opacity = 1;
-          }, 1000); 
-        }, 7000);
-      });
-    </script>
-
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {

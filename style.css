@@ -55,6 +55,24 @@ body {
   padding: 20px;
 }
 
+.wave-hand {
+  display: inline-block;
+  animation: wave 2s ease-in-out 2;
+  transform-origin: 70% 70%;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
 @keyframes shinyBorder {
   0% {
     border-color: red;
@@ -127,8 +145,7 @@ div.more-info > .more-info-footer {
     opacity: 1;
 }
 
-.Specialist,
-.english-spanish {
+.Specialist {
   opacity: 1;
   transition: opacity 1s ease-in-out; 
 }

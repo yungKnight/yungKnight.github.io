@@ -475,7 +475,6 @@
         min-height: 1rem;
     }
 
-/* Hide horizontal overflow */
     body {
         padding-bottom: 4rem;
         font-family: serif, sans-serif;
@@ -493,17 +492,17 @@
     .slanted-grid {
       width: 100%;
       display: grid;
-      grid-template-columns: 70% 30%; /* Adjust columns to shift padding correctly */
-      gap: 3rem; /* Controls the gap between grid items */
+      grid-template-columns: 70% 30%; 
+      gap: 3rem; 
       position: relative;
     }
 
     .slanted-grid > :first-child {
-      margin-left: 2rem; /* Add padding to the right of the first grid item */
+      margin-left: 2rem; 
     }
 
     .slanted-grid > :last-child {
-      margin-right: 2rem; /* Add padding to the left of the second grid item */
+      margin-right: 2rem; 
     }
 
     .slanted-grid::before {
@@ -541,14 +540,13 @@
       100% { transform: rotate(0deg); }
     }
 
-/* Define keyframes for the shiny border animation */
     @keyframes shinyBorder {
       0% {
         border-color: red;
         border-width: 2px;
       }
       50% {
-        border-color: #ff6666; /* Lighter red */
+        border-color: #ff6666;
         border-width: 4px;
       }
       100% {
@@ -557,33 +555,31 @@
       }
     }
 
-/* Apply styles and animation to the image */
     .animated-border {
       border: 2px solid red;
-      border-radius: 50%; /* Make the border circular */
+      border-radius: 50%;
       animation: shinyBorder 1.5s infinite ease-in-out;
-      transition: border-width 0.3s ease, border-color 0.3s ease-out; /* Smooth transition for hover effect */
+      transition: border-width 0.3s ease, border-color 0.3s ease-out; 
     }
 
-/* On hover, pause the animation and stop at 50% */
     .animated-border:hover {
-      animation: none; /* Stop the animation */
-      border-width: 4px; /* Set border width to 4px */
-      border-color: #ff6666; /* Set border color to lighter red */
+      animation: none; 
+      border-width: 4px; 
+      border-color: #ff6666; 
     }
 
     .text.card.more-info {
-        display: none; /* Hide the card by default */
-        position: absolute; /* Position relative to the popup-container */
-        top: 100%; /* Position below the image */
-        left: 42%; /* Center it horizontally */
-        transform: translateX(-100%); /* Center it exactly */
+        display: none; 
+        position: absolute; 
+        top: 100%; 
+        left: 42%; 
+        transform: translateX(-100%); 
         transform: translateY(-100%);
         padding: 0.11rem;
         border-radius: 0.25rem;
-        background-color: #ffff99; /* Slightly transparent white */
+        background-color: #ffff99; 
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        z-index: 100000; /* Ensure it appears on top of other content */
+        z-index: 100000; 
         max-width: 700px;
     }
 
@@ -603,12 +599,10 @@
         display: block;
     }
 
-/* Optionally add a transition for smooth appearance */
     .more-info {
         transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
-/* If you want to add a fade-in effect */
     .more-info {
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
@@ -626,22 +620,22 @@
 
     .experiences-holder {
       width: 100%;
-      position: relative; /* Ensure it acts as a reference for the pseudo-element */
+      position: relative; 
       display: flex;
       justify-content: center;
-      align-items: stretch; /* This will stretch the content and the line to full height */
+      align-items: stretch; 
     }
 
     .experiences-holder::before {
       content: "";
       position: absolute;
-      left: 50%; /* Position the line in the center */
+      left: 50%; 
       top: 5rem;
       bottom: 7.5rem;
       opacity: 0.5;
-      width: 2px; /* The width of the line */
-      background-color: #d147a3; /* The color of the line */
-      z-index: -1; /* Places the line behind the content */
+      width: 2px; 
+      background-color: #d147a3; 
+      z-index: -1; 
     }
 
 
@@ -656,7 +650,6 @@
         transition: opacity 0.6s ease, transform 1.6s;
     }
 
-/* Card Styles */
     .text.card.custom-max-width {
         max-width: 750px;
     }
@@ -758,7 +751,6 @@
         padding-left: 0;
     }
 
-/* Custom list items */
     .custom-list li:nth-child(odd) {
         flex-direction: row;
         transform: translateY(2rem);
@@ -796,14 +788,14 @@
         border: 2px black;
         background-color: white;
         border-radius: 50%;
-        min-width: 2rem; /* Ensuring it doesn't get too small */
+        min-width: 2rem; 
         min-height: 2rem;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         margin: 0 1rem;
         position: relative;
-        z-index: 1; /* Ensure the icon overlays the line */
+        z-index: 1; 
     }
 
     .bullet1 .icon {
@@ -907,7 +899,7 @@
     }
 
     @keyframes vibrate {
-        0% { transform: translateX(0) scale(1.1); }  /* Include the existing scale transform */
+        0% { transform: translateX(0) scale(1.1); }
         25% { transform: translateX(-2px) scale(1.1); }
         50% { transform: translateX(2px) scale(1.1); }
         75% { transform: translateX(-2px) scale(1.1); }

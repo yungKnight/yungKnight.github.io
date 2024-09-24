@@ -1,3 +1,9 @@
+@media (min-width: 900px) {
+    .about-me {
+        display: none;
+    }
+}
+
 @media (min-width: 900px) and (max-width: 1400px){
     html {
         font-size: 20px;
@@ -326,58 +332,6 @@
         margin: 0 20px;
         position: relative;
         z-index: 1; 
-    }
-
-    .bullet1 .icon {
-        background-image: url('../images/pacifier.png');
-    }
-
-    .bullet2 .icon {
-        background-image: url('../images/read.png');
-    }
-
-    .bullet3 .icon {
-        background-image: url('../images/discover.png');
-    }
-
-    .bullet4 .icon {
-        background-image: url('../images/think.png');
-    }
-
-    .bullet5 .icon {
-        background-image: url('../images/build.png');
-    }
-
-    .bullet5A .icon {
-        background-image: url('../images/grad.png');
-    }
-
-    .bullet6 .icon {
-        background-image: url('../images/designer.png');
-    }
-
-    .bullet7 .icon {
-        background-image: url('../images/learn.png');
-    }
-
-    .bullet8 .icon {
-        background-image: url('../images/scraper.png');
-    }
-
-    .bullet9 .icon {
-        background-image: url('../images/build.png');
-    }
-
-    .bullet10 .icon {
-        background-image: url('../images/contrib.png');
-    }
-
-    .bullet11 .icon {
-        background-image: url('../images/web.png');
-    }
-
-    .bullet12 .icon {
-        background-image: url('../images/build.png');
     }
 
     .footer {
@@ -797,59 +751,7 @@
         position: relative;
         z-index: 1; 
     }
-
-    .bullet1 .icon {
-        background-image: url('../images/pacifier.png');
-    }
-
-    .bullet2 .icon {
-        background-image: url('../images/read.png');
-    }
-
-    .bullet3 .icon {
-        background-image: url('../images/discover.png');
-    }
-
-    .bullet4 .icon {
-        background-image: url('../images/think.png');
-    }
-
-    .bullet5 .icon {
-        background-image: url('../images/build.png');
-    }
-
-    .bullet5A .icon {
-        background-image: url('../images/grad.png');
-    }
-
-    .bullet6 .icon {
-        background-image: url('../images/designer.png');
-    }
-
-    .bullet7 .icon {
-        background-image: url('../images/learn.png');
-    }
-
-    .bullet8 .icon {
-        background-image: url('../images/scraper.png');
-    }
-
-    .bullet9 .icon {
-        background-image: url('../images/build.png');
-    }
-
-    .bullet10 .icon {
-        background-image: url('../images/contrib.png');
-    }
-
-    .bullet11 .icon {
-        background-image: url('../images/web.png');
-    }
-
-    .bullet12 .icon {
-        background-image: url('../images/build.png');
-    }
-
+    
     .footer {
         height: 3.8em;
         display: grid;

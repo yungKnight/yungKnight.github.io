@@ -1,54 +1,64 @@
 .bullet1 .icon {
-        background-image: url('../images/pacifier.png');
+    background-image: url('../images/pacifier.png');
+}
+
+.bullet2 .icon {
+    background-image: url('../images/read.png');
+}
+
+.bullet3 .icon {
+    background-image: url('../images/discover.png');
+}
+
+.bullet4 .icon {
+    background-image: url('../images/think.png');
+}
+
+.bullet5 .icon {
+    background-image: url('../images/build.png');
+}
+
+.bullet5A .icon {
+    background-image: url('../images/grad.png');
+}
+
+.bullet6 .icon {
+    background-image: url('../images/designer.png');
+}
+
+.bullet7 .icon {
+    background-image: url('../images/learn.png');
+}
+
+.bullet8 .icon {
+    background-image: url('../images/scraper.png');
+}
+
+.bullet9 .icon {
+    background-image: url('../images/build.png');
+}
+
+.bullet10 .icon {
+    background-image: url('../images/contrib.png');
+}
+
+.bullet11 .icon {
+    background-image: url('../images/web.png');
+}
+
+.bullet12 .icon {
+    background-image: url('../images/build.png');
+}
+
+@media (min-width: 600px) {
+    .services-list {
+        align-items: stretch !important;
     }
 
-    .bullet2 .icon {
-        background-image: url('../images/read.png');
+    .services-list .text.card {
+        height: 100%;
     }
-
-    .bullet3 .icon {
-        background-image: url('../images/discover.png');
-    }
-
-    .bullet4 .icon {
-        background-image: url('../images/think.png');
-    }
-
-    .bullet5 .icon {
-        background-image: url('../images/build.png');
-    }
-
-    .bullet5A .icon {
-        background-image: url('../images/grad.png');
-    }
-
-    .bullet6 .icon {
-        background-image: url('../images/designer.png');
-    }
-
-    .bullet7 .icon {
-        background-image: url('../images/learn.png');
-    }
-
-    .bullet8 .icon {
-        background-image: url('../images/scraper.png');
-    }
-
-    .bullet9 .icon {
-        background-image: url('../images/build.png');
-    }
-
-    .bullet10 .icon {
-        background-image: url('../images/contrib.png');
-    }
-
-    .bullet11 .icon {
-        background-image: url('../images/web.png');
-    }
-
-    .bullet12 .icon {
-        background-image: url('../images/build.png');
-    }
+}
 
 @media (max-width: 600px) {
     html {

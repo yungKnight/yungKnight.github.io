@@ -1,53 +1,53 @@
 .bullet1 .icon {
-    background-image: url('../images/pacifier.png');
+    background-image: url('../Images/pacifier.png');
 }
 
 .bullet2 .icon {
-    background-image: url('../images/read.png');
+    background-image: url('../Images/read.png');
 }
 
 .bullet3 .icon {
-    background-image: url('../images/discover.png');
+    background-image: url('../Images/discover.png');
 }
 
 .bullet4 .icon {
-    background-image: url('../images/think.png');
+    background-image: url('../Images/think.png');
 }
 
 .bullet5 .icon {
-    background-image: url('../images/build.png');
+    background-image: url('../Images/build.png');
 }
 
 .bullet5A .icon {
-    background-image: url('../images/grad.png');
+    background-image: url('../Images/grad.png');
 }
 
 .bullet6 .icon {
-    background-image: url('../images/designer.png');
+    background-image: url('../Images/designer.png');
 }
 
 .bullet7 .icon {
-    background-image: url('../images/learn.png');
+    background-image: url('../Images/learn.png');
 }
 
 .bullet8 .icon {
-    background-image: url('../images/scraper.png');
+    background-image: url('../Images/scraper.png');
 }
 
 .bullet9 .icon {
-    background-image: url('../images/build.png');
+    background-image: url('../Images/build.png');
 }
 
 .bullet10 .icon {
-    background-image: url('../images/contrib.png');
+    background-image: url('../Images/contrib.png');
 }
 
 .bullet11 .icon {
-    background-image: url('../images/web.png');
+    background-image: url('../Images/web.png');
 }
 
 .bullet12 .icon {
-    background-image: url('../images/build.png');
+    background-image: url('../Images/build.png');
 }
 
 @media (min-width: 600px) {
